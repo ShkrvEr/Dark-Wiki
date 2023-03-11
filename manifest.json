@@ -1,0 +1,20 @@
+{
+	"name": "Dark_Wiki",
+	"description": "Wikipedia dark theme",
+	"manifest_version": 3,
+	"version": "1.0",
+	"author": "Erlan Shakirov", 
+
+	"action": {
+		"default_icon": {
+			"16": "logo.png"
+		}
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["https://ru.wikipedia.org/*"],
+			"js": ["script.js"]
+		}
+	]
+}
